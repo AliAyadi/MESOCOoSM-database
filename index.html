@@ -1,0 +1,481 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by Ali Ayadi
+	LabEx SERENADE | ayadi@cerege.fr
+-->
+<html>
+	<head>
+		<title>EXPOSED - Environmental eXPOsure to nanomaterials Database</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>EXPOSED</h1>
+								<p>The EXPOSED database is a novel, comprehensive and exclusive database on environmental exposure to nanoparticles designed by <a href="#">the LabEx SERENADE</a>.<br>
+								Based on the Safe-by-Design approach, the EXPOSED database can be used as benchmarking source to improve both safety and efficacy of manufactured nanomaterials.<br>
+								EXPOSED is available as downloadable SQL file for free under an <a href="#">Open Database License v1.0</a>.<br>
+								A JAVA <a href="#">Graphical User Interface (GUI)</a> is freely available to provide direct managing, searching and browsing.<br>
+								The <a href="#"> web portal </a> of the EXPOSED database was built in HTML, CSS, JavaScript and JQuery to make it more attractive.</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">About</a></li>
+								<li><a href="#work">Documentation</a></li>
+								<li><a href="#about">Licencing</a></li>
+								<li><a href="#elements">Download</a></li>
+								<li><a href="#contact">Contact us</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">About</h2>
+								<p>The EXPOSED database - for Environmental eXPOsure to nanomaterials Database - is a computational infrastructure for toxicological data management of engineered nanomaterials.</p> 
+								<p>It has developed an environmental exposure database (aquatic mesocosms data, release from products data, ecotox data, …) based on results obtained within the SERENADE's team and H2020 projects.</p>
+								<p>EXPOSED aims to predict and explain the nanomaterial behavior and fate in different eocsystems as well as their potential impacts on the environment at different stages of the nanoproducts lifecyle.</p>
+								<blockquote>In summary, EXPOSED is a distinct database resource providing thousands of experiment data obtained in tens of unique experiments investigating Ag, CeO2, CuO, TiO2,…-based nanomaterials.</blockquote>
+								<span class="image fit"><img src="images/SERENADE.png" alt="" /></span>
+								
+							
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">Documentation</h2>
+								<h3 class="major">Publication</h3>
+								<p>You can find all SERENADE's publications <a href="www.labex-serenade.fr/publications">here</a>.</p>
+								<h3 class="major">Database file</h3>
+								<p>This the EXPOSED database <a href="https://www.mediafire.com/view/oc6v7yokxr74930/Exposed_schema.png/file">schema</a> and this <a href="https://www.mediafire.com/file/wwodgokb5vou2c7/EXPOSEDdb.pdf/file">report</a> presents the logical database schema design.<br> 
+								Please refer to the <a href="#element">download tab</a>, for additional details about the database installation.</p>
+								<h3 class="major">Run application file</h3>
+								<p>This <a href="#">presentation</a> presents the different steps for running the EXPOSED project<br>
+								This <a href="#">file</a> contains the executable jar file of the EXPOSED project.<br></p>
+								<p>How to use it?<br>
+   								First copy the folder to your computer and then run the EXPOSED.jar file.<br>
+   								Once you register, the SERENADE team will send you a username and a password.<br>
+								Please enter the received Username and Password to launch the project.<br>
+								For developers, please refer to the <a href="#element">download tab</a>, for additional details about the code source.</p>
+   								
+								<p>We hope you are able run these project, if you find any problem just contact the developers: </p>
+								<ol>
+									<li>Mélanie Auffan</li>
+									<li>Jérôme Rose</li>
+									<li>Ali Ayadi</li>
+								</ol>
+							</article>
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">Licencing</h2>
+								<h3 class="major">Licence</h3>
+								<p>This project (database and application) is developed by the LaBEx SERENADE (Laboratory of Excellence for Safe(r) Ecodesign Research and Education applied to NAnomaterial DEvelopment).<br>
+								The EXPOSED database and application are free to use under the licence agreement Creative Commons - Share alike.<br>
+								If you intend to use these database/application, as such or modifying them, please acknowledge the primary source monitoring "LabEx SERENADE".<br>
+								Please see the folder licenses/ for more detail. </p>
+								<h3 class="major">Funding</h3>
+								<p>This project has received funding from the french program "Investissements d’avenir".</p>
+							</article>
+
+						
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Download</h2>
+
+								<section>
+									<h3 class="major">The EXPOSED SQL database</h3>
+									<p>The SQL file of the EXPOSED database can be downloaded <a href="https://www.mediafire.com/file/uh191r4xyy67jmj/serenadedb.sql/file">here</a>.</p>
+									
+									<h4>Prerequisites</h4>
+									<p>You need a MySQL database server (5.0+) and run the commands below through a user that has the following privileges:</p>
+									<pre><code>
+SELECT, INSERT, UPDATE, DELETE, 
+CREATE, DROP, RELOAD, REFERENCES, 
+INDEX, ALTER, SHOW DATABASES, 
+CREATE TEMPORARY TABLES, 
+LOCK TABLES, EXECUTE, CREATE VIEW
+									</code></pre>
+									<p>See usage in the <a href="https://dev.mysql.com/doc/employee/en/">MySQL docs</a>.</p>
+									<h4>Installation:</h4>
+									<ol>
+										<li>Download the repository</li>
+										<li>Change directory to the repository</li>
+									</ol>
+									<p>Then run/</p>
+									<pre><code>
+mysql < EXPOSEDdb.sql
+									</code></pre>
+									<p>If you want to install with two large partitioned tables, run</p>
+									<pre><code>
+mysql < EXPOSEDdb_partitioned.sql
+									</code></pre>
+									
+									<h4>Testing the installation</h4>
+									<p>After installing, you can run one of the following:</p>
+									<pre><code>
+
+Microsoft Windows [version 10.0.17763.914]
+(c) 2018 Microsoft Corporation. Tous droits réservés.
+
+C:>cd \xampp\mysql\bin
+
+C:\xampp\mysql\bin>mysql -u (root) -p (password) -h (host server)
+Enter password:
+Welcome to the Oracle monitor.  Commands end with ; or \g.
+Your Oracle connection id is 264
+Server version: 10.4.6-Oraclem oracle.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+Oracle [(none)]> use serenadedb;
+Database changed
+
+Oracle [EXPOSEDdb]> show tables;
++----------------------+
+| Tables_in_EXPOSEDdb |
++----------------------+
+| bibliography         |
+| description          |
+| dictionary           |
+| experiment           |
+| institution          |
+| instrument           |
+| measure              |
+| measurement          |
+| people               |
+| protocol             |
+| publication          |
+| sampling             |
+| users                |
++----------------------+
+13 rows in set (0.002 sec)
+
+Oracle [EXPOSEDdb]> describe experiment;
++---------------------+--------------+------+-----+---------+----------------+
+| Field               | Type         | Null | Key | Default | Extra          |
++---------------------+--------------+------+-----+---------+----------------+
+| IDE                 | int(200)     | NO   | PRI | NULL    | auto_increment |
+| doi                 | varchar(255) | YES  | MUL | NULL    |                |
+| Total_time          | int(150)     | NO   |     | NULL    |                |
+| Ecosystem           | varchar(20)  | NO   |     | NULL    |                |
+| Primary_consumer    | varchar(20)  | NO   |     | NULL    |                |
+| Secondary_consumer  | varchar(20)  | YES  |     | NULL    |                |
+| Benthic_inocolum    | varchar(20)  | YES  |     | NULL    |                |
+| Planctonic_inocolum | varchar(20)  | YES  |     | NULL    |                |
++---------------------+--------------+------+-----+---------+----------------+
+8 rows in set (0.023 sec)
+
+Oracle [EXPOSEDdb]> describe sampling;
++----------------+-------------+------+-----+---------+----------------+
+| Field          | Type        | Null | Key | Default | Extra          |
++----------------+-------------+------+-----+---------+----------------+
+| IDS            | int(255)    | NO   | PRI | NULL    | auto_increment |
+| IDE            | int(255)    | NO   | MUL | NULL    |                |
+| Injection_mode | varchar(20) | NO   |     | NULL    |                |
+| Metal          | varchar(25) | YES  |     | NULL    |                |
+| Mineralogy     | varchar(25) | YES  |     | NULL    |                |
+| Shape          | varchar(25) | YES  |     | NULL    |                |
+| Coating        | varchar(25) | YES  |     | NULL    |                |
+| Size           | int(25)     | YES  |     | NULL    |                |
+| Contaminant    | varchar(25) | YES  |     | NULL    |                |
+| Sampling_time  | int(150)    | NO   |     | NULL    |                |
++----------------+-------------+------+-----+---------+----------------+
+10 rows in set (0.028 sec)
+
+Oracle [EXPOSEDdb]> describe measure;
++----------------------+----------+------+-----+---------+----------------+
+| Field                | Type     | Null | Key | Default | Extra          |
++----------------------+----------+------+-----+---------+----------------+
+| IDM                  | int(255) | NO   | PRI | NULL    | auto_increment |
+| IDS                  | int(255) | NO   | MUL | NULL    |                |
+| Total_dose           | float    | NO   |     | NULL    |                |
+| PH                   | float    | YES  |     | NULL    |                |
+| Temperature          | float    | YES  |     | NULL    |                |
+| Conductivity         | float    | YES  |     | NULL    |                |
+| Dissolved_oxygen     | float    | YES  |     | NULL    |                |
+| TOC                  | float    | YES  |     | NULL    |                |
+| ORP_water            | float    | YES  |     | NULL    |                |
+| ORP_sediment         | float    | YES  |     | NULL    |                |
+| ORP_interface        | float    | YES  |     | NULL    |                |
+| Particles_water      | float    | YES  |     | NULL    |                |
+| Metal_sediment       | float    | YES  |     | NULL    |                |
+| Metal_water          | float    | YES  |     | NULL    |                |
+| Dissolved_Metal      | float    | YES  |     | NULL    |                |
+| Metal_layings        | float    | YES  |     | NULL    |                |
+| Metal_gland          | float    | YES  |     | NULL    |                |
+| Metal_adult          | float    | YES  |     | NULL    |                |
+| Metal_juveniles      | float    | YES  |     | NULL    |                |
+| CU_NI_sediment       | float    | YES  |     | NULL    |                |
+| Speciation_digestive | float    | YES  |     | NULL    |                |
+| Speciation_layings   | float    | YES  |     | NULL    |                |
+| Speciation_juveniles | float    | YES  |     | NULL    |                |
+| Adult                | float    | YES  |     | NULL    |                |
+| Juveniles            | float    | YES  |     | NULL    |                |
+| Picoplankton         | float    | YES  |     | NULL    |                |
+| Picobenthos          | float    | YES  |     | NULL    |                |
+| Algae_water          | float    | YES  |     | NULL    |                |
+| Algae_sediment       | float    | YES  |     | NULL    |                |
+| TBARS                | float    | YES  |     | NULL    |                |
+| TAOC                 | float    | YES  |     | NULL    |                |
++----------------------+----------+------+-----+---------+----------------+
+31 rows in set (0.029 sec)
+
+Oracle [EXPOSEDdb]> describe publication;
++-----------------+--------------+------+-----+---------+-------+
+| Field           | Type         | Null | Key | Default | Extra |
++-----------------+--------------+------+-----+---------+-------+
+| DOI             | varchar(350) | NO   | PRI | NULL    |       |
+| Title           | varchar(250) | YES  |     | NULL    |       |
+| Journal         | varchar(250) | YES  |     | NULL    |       |
+| Year            | varchar(250) | YES  |     | NULL    |       |
+| Volume          | varchar(250) | YES  |     | NULL    |       |
+| Issue           | varchar(250) | YES  |     | NULL    |       |
+| Page            | varchar(250) | YES  |     | NULL    |       |
+| Contact_Author  | varchar(250) | NO   |     | NULL    |       |
+| Keywords        | varchar(250) | YES  |     | NULL    |       |
+| Abstract        | varchar(250) | YES  |     | NULL    |       |
+| Publish_Status  | varchar(250) | YES  |     | NULL    |       |
+| Curation_Status | varchar(250) | YES  |     | NULL    |       |
+| Curation_Note   | varchar(250) | YES  |     | NULL    |       |
++-----------------+--------------+------+-----+---------+-------+
+13 rows in set (0.027 sec)
+
+Oracle [EXPOSEDdb]> describe publication;
++-----------------+--------------+------+-----+---------+-------+
+| Field           | Type         | Null | Key | Default | Extra |
++-----------------+--------------+------+-----+---------+-------+
+| DOI             | varchar(350) | NO   | PRI | NULL    |       |
+| Title           | varchar(250) | YES  |     | NULL    |       |
+| Journal         | varchar(250) | YES  |     | NULL    |       |
+| Year            | varchar(250) | YES  |     | NULL    |       |
+| Volume          | varchar(250) | YES  |     | NULL    |       |
+| Issue           | varchar(250) | YES  |     | NULL    |       |
+| Page            | varchar(250) | YES  |     | NULL    |       |
+| Contact_Author  | varchar(250) | NO   |     | NULL    |       |
+| Keywords        | varchar(250) | YES  |     | NULL    |       |
+| Abstract        | varchar(250) | YES  |     | NULL    |       |
+| Publish_Status  | varchar(250) | YES  |     | NULL    |       |
+| Curation_Status | varchar(250) | YES  |     | NULL    |       |
+| Curation_Note   | varchar(250) | YES  |     | NULL    |       |
++-----------------+--------------+------+-----+---------+-------+
+13 rows in set (0.027 sec)
+
+Oracle [EXPOSEDdb]> describe bibliography;
++-----------------+--------------+------+-----+---------+----------------+
+| Field           | Type         | Null | Key | Default | Extra          |
++-----------------+--------------+------+-----+---------+----------------+
+| Bibliography_ID | int(250)     | NO   | PRI | NULL    | auto_increment |
+| People_ID       | int(250)     | NO   | MUL | NULL    |                |
+| Institution_ID  | int(250)     | NO   | MUL | NULL    |                |
+| DOI             | varchar(350) | NO   | MUL | NULL    |                |
++-----------------+--------------+------+-----+---------+----------------+
+4 rows in set (0.025 sec)
+
+Oracle [EXPOSEDdb]> describe description;
++----------------+--------------+------+-----+---------+----------------+
+| Field          | Type         | Null | Key | Default | Extra          |
++----------------+--------------+------+-----+---------+----------------+
+| Description_ID | int(255)     | NO   | PRI | NULL    | auto_increment |
+| Table_descrip  | varchar(250) | YES  |     | NULL    |                |
+| Field          | varchar(250) | YES  |     | NULL    |                |
+| Note           | varchar(250) | YES  |     | NULL    |                |
+| Data_type      | varchar(250) | YES  |     | NULL    |                |
+| Valid_value    | varchar(250) | YES  |     | NULL    |                |
++----------------+--------------+------+-----+---------+----------------+
+6 rows in set (0.029 sec)
+
+Oracle [EXPOSEDdb]> describe dictionary;
++---------------+--------------+------+-----+---------+----------------+
+| Field         | Type         | Null | Key | Default | Extra          |
++---------------+--------------+------+-----+---------+----------------+
+| Dictionary_ID | int(255)     | NO   | PRI | NULL    | auto_increment |
+| Group         | varchar(250) | YES  |     | NULL    |                |
+| Item          | varchar(250) | YES  |     | NULL    |                |
+| Parameter     | varchar(350) | YES  |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+4 rows in set (0.024 sec)
+
+Oracle [EXPOSEDdb]> describe institution;
++----------------+--------------+------+-----+---------+----------------+
+| Field          | Type         | Null | Key | Default | Extra          |
++----------------+--------------+------+-----+---------+----------------+
+| Institution_ID | int(255)     | NO   | PRI | NULL    | auto_increment |
+| Department     | varchar(250) | YES  |     | NULL    |                |
+| Institution    | varchar(250) | YES  |     | NULL    |                |
+| City           | varchar(250) | YES  |     | NULL    |                |
+| State          | varchar(250) | YES  |     | NULL    |                |
+| Zipcode        | varchar(250) | YES  |     | NULL    |                |
+| Country        | varchar(250) | YES  |     | NULL    |                |
++----------------+--------------+------+-----+---------+----------------+
+7 rows in set (0.042 sec)
+
+Oracle [EXPOSEDdb]> describe people;
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| People_ID   | int(255)     | NO   | PRI | NULL    | auto_increment |
+| First_Name  | varchar(250) | YES  |     | NULL    |                |
+| Last_Name   | varchar(250) | YES  |     | NULL    |                |
+| Middle_Name | varchar(250) | YES  |     | NULL    |                |
+| Email       | varchar(250) | YES  |     | NULL    |                |
+| Phone       | varchar(250) | YES  |     | NULL    |                |
+| Web         | varchar(250) | YES  |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+7 rows in set (0.021 sec)
+
+Oracle [EXPOSEDdb]> describe instrument;
++----------------------+--------------+------+-----+---------+----------------+
+| Field                | Type         | Null | Key | Default | Extra          |
++----------------------+--------------+------+-----+---------+----------------+
+| Instrument_ID        | int(255)     | NO   | PRI | NULL    | auto_increment |
+| Name                 | varchar(250) | YES  |     | NULL    |                |
+| Model                | varchar(250) | YES  |     | NULL    |                |
+| Manufacturer_Name    | varchar(250) | YES  |     | NULL    |                |
+| Manufacturer_City    | varchar(250) | YES  |     | NULL    |                |
+| Manufacturer_State   | varchar(250) | YES  |     | NULL    |                |
+| Manufacturer_Country | varchar(250) | YES  |     | NULL    |                |
++----------------------+--------------+------+-----+---------+----------------+
+7 rows in set (0.025 sec)
+
+Oracle [EXPOSEDdb]> describe protocol;
++----------------+--------------+------+-----+---------+----------------+
+| Field          | Type         | Null | Key | Default | Extra          |
++----------------+--------------+------+-----+---------+----------------+
+| Protocol_ID    | int(255)     | NO   | PRI | NULL    | auto_increment |
+| Name           | varchar(250) | YES  |     | NULL    |                |
+| Duration_Value | int(250)     | YES  |     | NULL    |                |
+| Duration_Units | varchar(250) | YES  |     | NULL    |                |
+| Description    | varchar(250) | YES  |     | NULL    |                |
+| Reference      | varchar(250) | YES  |     | NULL    |                |
++----------------+--------------+------+-----+---------+----------------+
+6 rows in set (0.027 sec)
+
+Oracle [EXPOSEDdb]> describe users;
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| id       | int(150)     | NO   | PRI | NULL    | auto_increment |
+| username | varchar(200) | NO   |     | NULL    |                |
+| password | varchar(200) | NO   |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+3 rows in set (0.019 sec)
+									</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major"> JAVA Graphical User Interface (GUI)</h3>
+									<p>It allows managing with the EXPOSED SQL database via a DataBase Management System (DBMS).</p>
+									<h4>Download file</h4>
+									<p>The source code is freely downloaded at <a href="#"> here </a>.</p>
+									<h4>Prerequisites</h4>
+									<p><p>You need:</br>			
+									<ol>
+										<li>A java 8.0 or Higher version must be installed.</li>
+										<li>An OS windows 10, Mac or any version of Linux.</li>
+									</ol>	
+									<h4 class="major">Source code</h4>
+									<p>It contains all the source code that means all java files.<br>
+   									<p>How to use it?<br>
+   									Firts donwload Netbeans from <a href="http://netbeans.org/downloads/index.html"> http://netbeans.org/downloads/index.html</a>;<br>
+   									After the installation of Netbeans start netbeans and go to File Menu; <br>
+   									Open project and navigate to Source Code_Netbeans folder; <br>
+   									In the library add all the jar files which is given in the lib folder;<br>
+									And run the porject.</p>
+									<h4 class="major">EXPOSED.exe</h4>
+									<p>It is executable EXE of our Project, just double click it and install in any directory.<br>
+									Some time it creats problem when you intall this software in C:\ drive, due to some admin rights to Write data in Database so its better to install in other drive.</p>
+								</section>							
+							</article>
+
+					
+			<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact us</h2>
+								<form method="post" action="mailto:ayadi@cerege.fr">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" placeholder="Ali Ayadi" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" placeholder="ayadi@cerege.fr" id="email" />
+										</div>
+										<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Researcher</option>
+													<option value="1">Research laboratory</option>
+													<option value="1">Academic university</option>
+													<option value="1">Company</option>
+												</select>
+											</div>
+											
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" placeholder="Enter your message" id="message" rows="4"></textarea>
+										</div>
+									
+									
+										</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								<ul class="icons">
+									<li><a href="https://twitter.com/LabexSerenade" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://fr-fr.facebook.com/ceregeUM34/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://aliayadi.github.io/EXPOSED-database/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+					</div>
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright"> EXPOSED database &copy; <a href="https://html5up.net">LabEx SERENADE</a> 2019</p>
+						<span class="copyright"><img src="images/SERENADE.png" alt="" /></span>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
